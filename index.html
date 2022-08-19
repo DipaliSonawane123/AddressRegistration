@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Address Home
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1><center>Address Registration</center></h1>
+	<hr><img src="BL_logo_square_jpg.jpg" width="50px" height="50px">
+			<div class="address-form">
+                <h1 align="center">Home Address</h1>
+                
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>LandMark</label>
+                        <input type="text" name="landmark" id="landmark">
+                    </div>
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div>
+                        <label>Pincode</label>
+                        <input type="text" name="pincode" id="pincode">
+                    </div>
+                    
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "address-table">
+            <h1 align="center">List of Home Addresses</h1>
+            <table class="list" id="addressList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>LandMark</th>
+                            <th>City</th>
+                            <th>Pincode</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
